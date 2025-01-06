@@ -1,0 +1,56 @@
+labels:
+  - name: "bug"
+    color: "#CC0000"
+    description: "An issue with the system 🐛."
+
+  - name: "feature"
+    color: "#336699"
+    description: "New functionality."
+
+  - name: "enhancement"
+    color: "a2eeef"
+    description: "New feature or request."
+
+  - name: "javascript"
+    color: "#f7df1e"
+    description: "JavaScript-related issues or dependencies."
+
+  - name: "python"
+    color: "#306998"
+    description: "Python-related issues or dependencies."
+
+  - name: "ruby"
+    color: "#cc342d"
+    description: "Ruby-related issues or dependencies."
+
+  - name: "documentation"
+    color: "#ffcc00"
+    description: "Improvements or additions to documentation 📚."
+
+  - name: "question"
+    color: "#d876e3"
+    description: "Questions about the project or system ❓."
+
+  - name: "urgent"
+    color: "#ff0000"
+    description: "Critical issue that requires immediate attention 🚨."
+
+  - name: "wontfix"
+    color: "#ffffff"
+    description: "Issues that will not be addressed."
+
+  - name: "help wanted"
+    color: "#33cc33"
+    description: "Looking for help or contributions 🙌."
+
+  - name: "good first issue"
+    color: "#66ff99"
+    description: "Good entry-level issue for new contributors 🌱."
+
+  - name: "dependency"
+    color: "#ffa500"
+    description: "Issues related to external dependencies 📦."
+
+  - name: "UI/UX"
+    color: "#0088cc"
+    description: "User interface or experience-related issue 🎨."
