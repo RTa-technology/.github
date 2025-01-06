@@ -1,0 +1,26 @@
+name: Sync Labels
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Sync labels
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const labels = JSON.parse(fs.readFileSync('.github/labels.yml', 'utf8'));
+            const repo = process.env.GITHUB_REPOSITORY;
+            for (const label of labels) {
+              await github.issues.createLabel({
+                ...context.repo,
+                ...label
+              }).catch((err) => console.log(err));
+            }
